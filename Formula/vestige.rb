@@ -1,27 +1,27 @@
 class Vestige < Formula
   desc "Local memory for MCP agents, on a signed append-only log"
   homepage "https://github.com/samvallad33/vestige"
-  version "4.0.0"
+  version "4.1.0"
   license "AGPL-3.0-only"
 
   on_arm do
     on_macos do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.0.0/vestige-mcp-aarch64-apple-darwin.tar.gz"
-      sha256 "7eedb508191b1adb616b11e80f784da4ffba0b8dc3936d5d1afc80f50290a5f3"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-aarch64-apple-darwin.tar.gz"
+      sha256 "48598ca11d336bab2e002c736c7e6a44c1fdbd669f2fbc2f290f9a1ad0aefea7"
     end
     on_linux do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.0.0/vestige-mcp-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fbb49efe901263cfe4661bcd4fc62e3a5fcbcfa3371e831e26aa50d70790b914"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b9eebeb5ce4af10c52d7b2f7db064f6fc16537f1593730d4ba9ef03f94ef90e7"
     end
   end
   on_intel do
     on_macos do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.0.0/vestige-mcp-x86_64-apple-darwin.tar.gz"
-      sha256 "8c3cc6832468a4bbd0f9ac97379100be6dd73650af456ea7861db63858e7a764"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-x86_64-apple-darwin.tar.gz"
+      sha256 "cf5d68e1ba7d4e999960ed60b8c0779f2ec4aeb5f31eb3b6aa558bcfabc68ab5"
     end
     on_linux do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.0.0/vestige-mcp-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c7df3f70ed593b01f7e64b5d02fbcdcb93a9db07925c1806f7f606ef76f03797"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "16798591edbdee7b6577d0d1dda76209ddaad56ea76b3e230d0eecf23edcaa1f"
     end
   end
 
@@ -41,7 +41,7 @@ class Vestige < Formula
   end
 
   test do
-    assert_match "4.0.0", shell_output("#{bin}/vestige-mcp --version")
+    assert_match "4.1.0", shell_output("#{bin}/vestige-mcp --version")
     assert_predicate bin/"vestige-upgrade", :executable?
   end
 end
