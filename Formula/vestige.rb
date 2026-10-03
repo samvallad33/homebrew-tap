@@ -41,7 +41,7 @@ class Vestige < Formula
   end
 
   test do
-    assert_match "4.1.0", shell_output("#{bin}/vestige-mcp --version")
+    assert_match "4.1.1", shell_output("#{bin}/vestige-mcp --version")
     assert_predicate bin/"vestige-upgrade", :executable?
   end
 end
