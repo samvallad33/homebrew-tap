@@ -1,27 +1,27 @@
 class Vestige < Formula
   desc "Local memory for MCP agents, on a signed append-only log"
   homepage "https://github.com/samvallad33/vestige"
-  version "4.1.0"
+  version "4.1.1"
   license "AGPL-3.0-only"
 
   on_arm do
     on_macos do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-aarch64-apple-darwin.tar.gz"
-      sha256 "48598ca11d336bab2e002c736c7e6a44c1fdbd669f2fbc2f290f9a1ad0aefea7"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.1/vestige-mcp-aarch64-apple-darwin.tar.gz"
+      sha256 "1cdf6445757a56f977f1a51cd43451c1ab5827d577d162646cd521995650c383"
     end
     on_linux do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b9eebeb5ce4af10c52d7b2f7db064f6fc16537f1593730d4ba9ef03f94ef90e7"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.1/vestige-mcp-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9f6b6d0421a950cbb2aa9d5da65c0055a3d2205acf08db5d898822bc21d4f7e8"
     end
   end
   on_intel do
     on_macos do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-x86_64-apple-darwin.tar.gz"
-      sha256 "cf5d68e1ba7d4e999960ed60b8c0779f2ec4aeb5f31eb3b6aa558bcfabc68ab5"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.1/vestige-mcp-x86_64-apple-darwin.tar.gz"
+      sha256 "f8f21565732bb72fbdc214da91fee27cbb9c4c6255f990ced239767c68536f5d"
     end
     on_linux do
-      url "https://github.com/samvallad33/vestige/releases/download/v4.1.0/vestige-mcp-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "16798591edbdee7b6577d0d1dda76209ddaad56ea76b3e230d0eecf23edcaa1f"
+      url "https://github.com/samvallad33/vestige/releases/download/v4.1.1/vestige-mcp-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e00bdf609fc4a0034aa25889d0776d291b022565c05b82a49f9d010818947b6f"
     end
   end
 
